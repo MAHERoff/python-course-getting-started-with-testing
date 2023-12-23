@@ -7,3 +7,12 @@ class TestAssertions(unittest.TestCase):
         
 if __name__ == '__main__':
     unittest.main()
+
+
+#class TestAccounts(unittest.TestCase):
+#
+#    def test_creation(self):
+#        self.assertTrue(account.create())
+#
+#    def test_deletion(self):
+#        self.assertTrue(account.delete())
