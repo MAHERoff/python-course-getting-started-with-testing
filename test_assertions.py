@@ -1,7 +1,10 @@
 import unittest
 
 def str_to_bool(value):
-    value = value.lower()
+    try:
+        value = value.lower()
+    except AttributeError:
+        raise AttributeError(f"{value} must be of type string")
     true_values = ['y','yes']
     false_values = ['no', 'n']
 
